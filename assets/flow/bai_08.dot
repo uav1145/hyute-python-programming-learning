@@ -1,0 +1,22 @@
+digraph CourseFlow {
+graph [rankdir=TB, bgcolor="transparent", pad="0.25", ranksep="0.53", nodesep="0.40", splines=curved];
+node [fontname="DejaVu Sans",fontsize=11, color="#08784d", fontcolor="#164b37", penwidth=1.6, style=filled, fillcolor="#eef7f0", margin="0.18,0.11"];
+edge [fontname="DejaVu Sans",fontsize=10,color="#167954",fontcolor="#305e48",penwidth=1.5,arrowsize=0.75];
+start [shape=ellipse, label="Bắt đầu", fillcolor="#d8efdf"];
+inp [shape=parallelogram, label="Nhận dict cảm biến", fillcolor="#fff7d8"];
+end [shape=ellipse, label="Kết thúc",fillcolor="#d8efdf"];
+init [shape=box,label="count ← 0",fillcolor="#eef7f0"];
+more [shape=diamond,label="Còn hồ sơ?",fillcolor="#fff3cc"];
+check [shape=diamond,label="T > 30 °C?",fillcolor="#fff3cc"];
+add [shape=box,label="count ← count + 1",fillcolor="#eef7f0"];
+out [shape=parallelogram,label="In số mã và count",fillcolor="#e4f2ed"];
+start -> inp [minlen=1];
+inp -> init [minlen=1];
+init -> more [minlen=1];
+more -> check [label="Có",minlen=1];
+check -> add [label="Đúng",minlen=1];
+check -> more [label="Sai",minlen=1];
+add -> more [constraint=false,style=dashed,tailport=w,headport=w,minlen=1];
+more -> out [label="Không",minlen=1];
+out -> end [minlen=1];
+}

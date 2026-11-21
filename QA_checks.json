@@ -1,0 +1,202 @@
+[
+  {
+    "bai": 1,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "Điện năng: 4.50 kWh"
+  },
+  {
+    "bai": 2,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "P = 60 W\nE = 120 Wh = 0.120 kWh"
+  },
+  {
+    "bai": 3,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "CANH BAO"
+  },
+  {
+    "bai": 4,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "TB = 27.875 °C\nMax = 31.0 °C; vuot = 1"
+  },
+  {
+    "bai": 5,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "E = 4.50 kWh"
+  },
+  {
+    "bai": 6,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "2026-11-20T08:00:00 25.6 °C OK"
+  },
+  {
+    "bai": 7,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "Vi tri vuot: [1, 3]\nCau hinh: (20.0, 30.0)"
+  },
+  {
+    "bai": 8,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "So cam bien: 2\nSo canh bao: 1\nS3: CHUA CO"
+  },
+  {
+    "bai": 9,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "{'so_hop_le': 7, 'so_loi': 1}"
+  },
+  {
+    "bai": 10,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "S1 True\nS2 False"
+  },
+  {
+    "bai": 11,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "K: [293.15, 298.15, 303.15]\nx: [2.0, 1.0]\n||Ax-b|| = 0.00e+00"
+  },
+  {
+    "bai": 12,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "Goc=8, hop le=7, loai=1\nhour\n2026-11-20 08:00:00    27.00\n2026-11-20 09:00:00    28.73"
+  },
+  {
+    "bai": 13,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "So diem: 7 | Da luu: bai13_do_thi.png"
+  },
+  {
+    "bai": 14,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "q* = 20.000 (don vi quy uoc)\nPhan du = 0.000e+00 Pa"
+  },
+  {
+    "bai": 15,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "a=99.80 °C/V, b=-49.76 °C\nMAE=0.225 °C"
+  },
+  {
+    "bai": 16,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "E = 3.500 kWh\nT(2 h) Euler = 23.164 °C"
+  },
+  {
+    "bai": 17,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "Sai lech lon nhat = 0.1892 °C"
+  },
+  {
+    "bai": 18,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "Luu: 2 | Loi: 1"
+  },
+  {
+    "bai": 19,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "Dien lanh: n=7, Tmax=31.2 °C\nO to: n=6, Umin=12.21 V"
+  },
+  {
+    "bai": 20,
+    "pass1_ast": true,
+    "pass2_executed": true,
+    "pass2_expected": true,
+    "html_generated": true,
+    "notes": [],
+    "returncode": 0,
+    "stdout": "{'so_hop_le': 7, 'so_loi': 1, 'tb_c': 27.743, 'so_vuot_30_c': 1}"
+  }
+]

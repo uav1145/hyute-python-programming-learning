@@ -1,0 +1,22 @@
+digraph CourseFlow {
+graph [rankdir=TB, bgcolor="transparent", pad="0.25", ranksep="0.53", nodesep="0.40", splines=curved];
+node [fontname="DejaVu Sans",fontsize=11, color="#08784d", fontcolor="#164b37", penwidth=1.6, style=filled, fillcolor="#eef7f0", margin="0.18,0.11"];
+edge [fontname="DejaVu Sans",fontsize=10,color="#167954",fontcolor="#305e48",penwidth=1.5,arrowsize=0.75];
+start [shape=ellipse, label="Bắt đầu", fillcolor="#d8efdf"];
+inp [shape=parallelogram, label="Nhận dòng văn bản", fillcolor="#fff7d8"];
+end [shape=ellipse, label="Kết thúc",fillcolor="#d8efdf"];
+len [shape=diamond,label="Có đúng 3 trường?",fillcolor="#fff3cc"];
+err [shape=parallelogram,label="Báo lỗi dữ liệu",fillcolor="#e4f2ed"];
+parse [shape=box,label="Chuyển thời điểm, T\nkiểm tra trạng thái",fillcolor="#eef7f0"];
+valid [shape=diamond,label="Dữ liệu hợp lệ?",fillcolor="#fff3cc"];
+out [shape=parallelogram,label="Trả về bản ghi",fillcolor="#e4f2ed"];
+start -> inp [minlen=1];
+inp -> len [minlen=1];
+len -> err [label="Không",minlen=1];
+len -> parse [label="Có",minlen=1];
+parse -> valid [minlen=1];
+valid -> err [label="Không",minlen=1];
+valid -> out [label="Có",minlen=1];
+out -> end [minlen=1];
+err -> end [minlen=1];
+}

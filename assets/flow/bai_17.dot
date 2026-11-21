@@ -1,0 +1,21 @@
+digraph CourseFlow {
+graph [rankdir=TB, bgcolor="transparent", pad="0.25", ranksep="0.53", nodesep="0.40", splines=curved];
+node [fontname="DejaVu Sans",fontsize=11, color="#08784d", fontcolor="#164b37", penwidth=1.6, style=filled, fillcolor="#eef7f0", margin="0.18,0.11"];
+edge [fontname="DejaVu Sans",fontsize=10,color="#167954",fontcolor="#305e48",penwidth=1.5,arrowsize=0.75];
+start [shape=ellipse, label="Bắt đầu", fillcolor="#d8efdf"];
+inp [shape=parallelogram, label="Nhập T0, Tenv, τ, Δt", fillcolor="#fff7d8"];
+end [shape=ellipse, label="Kết thúc",fillcolor="#d8efdf"];
+init [shape=box,label="T[0] ← T0",fillcolor="#eef7f0"];
+more [shape=diamond,label="Còn bước thời gian?",fillcolor="#fff3cc"];
+next [shape=box,label="T[k+1] ← Euler(T[k])",fillcolor="#eef7f0"];
+compare [shape=box,label="So với nghiệm giải tích",fillcolor="#eef7f0"];
+out [shape=parallelogram,label="Lưu đồ thị, báo sai lệch",fillcolor="#e4f2ed"];
+start -> inp [minlen=1];
+inp -> init [minlen=1];
+init -> more [minlen=1];
+more -> next [label="Có",minlen=1];
+next -> more [constraint=false,style=dashed,tailport=w,headport=w,minlen=1];
+more -> compare [label="Không",minlen=1];
+compare -> out [minlen=1];
+out -> end [minlen=1];
+}

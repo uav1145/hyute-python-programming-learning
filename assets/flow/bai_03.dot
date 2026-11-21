@@ -1,0 +1,22 @@
+digraph CourseFlow {
+graph [rankdir=TB, bgcolor="transparent", pad="0.25", ranksep="0.53", nodesep="0.40", splines=curved];
+node [fontname="DejaVu Sans",fontsize=11, color="#08784d", fontcolor="#164b37", penwidth=1.6, style=filled, fillcolor="#eef7f0", margin="0.18,0.11"];
+edge [fontname="DejaVu Sans",fontsize=10,color="#167954",fontcolor="#305e48",penwidth=1.5,arrowsize=0.75];
+start [shape=ellipse, label="Bắt đầu", fillcolor="#d8efdf"];
+inp [shape=parallelogram, label="Nhận T (°C)", fillcolor="#fff7d8"];
+end [shape=ellipse, label="Kết thúc",fillcolor="#d8efdf"];
+valid [shape=diamond,label="−50 ≤ T ≤ 150 ?",fillcolor="#fff3cc"];
+bad [shape=parallelogram,label="Không hợp lệ",fillcolor="#e4f2ed"];
+above [shape=diamond,label="T > 30 °C ?",fillcolor="#fff3cc"];
+warn [shape=parallelogram,label="Cảnh báo",fillcolor="#e4f2ed"];
+norm [shape=parallelogram,label="Bình thường",fillcolor="#e4f2ed"];
+start -> inp [minlen=1];
+inp -> valid [minlen=1];
+valid -> bad [label="Sai",minlen=1];
+valid -> above [label="Đúng",minlen=1];
+above -> warn [label="Đúng",minlen=1];
+above -> norm [label="Sai",minlen=1];
+bad -> end [minlen=1];
+warn -> end [minlen=1];
+norm -> end [minlen=1];
+}

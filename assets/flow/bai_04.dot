@@ -1,0 +1,24 @@
+digraph CourseFlow {
+graph [rankdir=TB, bgcolor="transparent", pad="0.25", ranksep="0.53", nodesep="0.40", splines=curved];
+node [fontname="DejaVu Sans",fontsize=11, color="#08784d", fontcolor="#164b37", penwidth=1.6, style=filled, fillcolor="#eef7f0", margin="0.18,0.11"];
+edge [fontname="DejaVu Sans",fontsize=10,color="#167954",fontcolor="#305e48",penwidth=1.5,arrowsize=0.75];
+start [shape=ellipse, label="Bắt đầu", fillcolor="#d8efdf"];
+inp [shape=parallelogram, label="Nhận danh sách T", fillcolor="#fff7d8"];
+end [shape=ellipse, label="Kết thúc",fillcolor="#d8efdf"];
+empty [shape=diamond,label="Danh sách rỗng?",fillcolor="#fff3cc"];
+err [shape=parallelogram,label="Báo không đủ dữ liệu",fillcolor="#e4f2ed"];
+init [shape=box,label="total ← 0; count ← 0",fillcolor="#eef7f0"];
+more [shape=diamond,label="Còn phần tử?",fillcolor="#fff3cc"];
+loop [shape=box,label="Cộng T; kiểm tra T > 30\nNếu đúng, tăng count",fillcolor="#eef7f0"];
+out [shape=parallelogram,label="In TB, max, count",fillcolor="#e4f2ed"];
+start -> inp [minlen=1];
+inp -> empty [minlen=1];
+empty -> err [label="Có",minlen=1];
+empty -> init [label="Không",minlen=1];
+init -> more [minlen=1];
+more -> loop [label="Có",minlen=1];
+loop -> more [constraint=false,style=dashed,tailport=w,headport=w,minlen=1];
+more -> out [label="Không",minlen=1];
+out -> end [minlen=1];
+err -> end [minlen=1];
+}
